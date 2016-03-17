@@ -8,10 +8,17 @@ vector<int> selection_sort(vector<int> a);
 void print_vector(vector<int>b);
 
 int main(){
-  	vector<int> myVector{ 12, 8, 22, 48, 9, 18, 22};
-	myVector = selection_sort(myVector);
+	vector<int> myVector{ 12, 8, 22, 48, 9, 18, 22 };
+	vector<int> myOtherVector{ 22, 0, 12, 33, 44, 2, 18 };
+	cout << "Original vector before Selection Sort: ";
 	print_vector(myVector);
-	//system("pause");
+	myVector = selection_sort(myVector);
+	cout << "And now after Selection Sort: ";
+	print_vector(myVector);
+	cout << "Original vector before Merge Sort: ";
+	print_vector(myOtherVector);
+	myOtherVector = merge_sort(myOtherVector);
+	cout << "And now after Merge Sort: ";
+	print_vector(myOtherVector);
 	return 0;
 }
-
