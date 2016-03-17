@@ -4,7 +4,7 @@ using std::cout;
 using std::endl;
 using std::vector;
 vector<int> merge_sort(const vector<int> a){
-	if (a.size() == 1)
+	if (a.size() <= 1)
 		return a;
 	int half_size = a.size() / 2;
 	vector<int> firstHalf(a.begin(), a.begin() + half_size);
