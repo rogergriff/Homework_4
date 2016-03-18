@@ -4,9 +4,9 @@ using std::cout;
 using std::endl;
 using std::vector;
 
-vector<int> selection_sort(vector<int> a);
-void print_vector(vector<int>b);
-vector<int> merge_sort(vector<int> a);
+vector<int> selection_sort(vector<int> & a);
+void print_vector(const vector<int> & b);
+vector<int> merge_sort(const vector<int> & a);
 
 int main(){
 	vector<int> myVector{ 12, 8, 22, 48, 9, 18, 22 };
