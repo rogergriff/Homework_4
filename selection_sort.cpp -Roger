@@ -7,21 +7,21 @@ using std::vector;
 
 vector<int> selection_sort(vector<int> a){
 	for (int i = 0; i < a.size(); i++){
-		int smallest;
+		//int smallest;
 		int smallestLocal;
-		smallest = a[i];
+		//smallest = a[i];
 		smallestLocal = i;
 		for (int j = i; j < a.size(); j++)
 		{
-			if (smallest > a[j])
+			if (a[smallestLocal] > a[j])
 			{
-				smallest = a[j];
+				//smallest = a[j];
 				smallestLocal = j;
 			}
 		}
 		int temp;
 		temp = a[i];
-		a[i] = smallest;
+		a[i] = a[smallestLocal];
 		a[smallestLocal] = temp;
 		}
 	return a;
